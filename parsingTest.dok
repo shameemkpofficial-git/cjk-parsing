@@ -1,0 +1,48 @@
+# Created by Haiyang on 2002-12-19
+#
+# Path: T:\progtest\parsingTest\parsingTest.dok
+# 
+# Content:
+#   A basic HTML parsing project
+# 
+# Skills Tested:
+#   1. Mastery of a programming language, ideally Python
+#   2. Basic analytical skills
+#   3. Basic text processing skills, especially proficiency
+#      of functions/methods/modules for string manipulation
+#
+
+Task Description:
+	There are 9 HTML files in the "htm" folder, and we would
+	like to parse these files into a single tabulated file - "result.tab".
+	After parsing, please describe the method you used for parsing
+	in "report.txt"
+
+Specifications:
+	The tabulated file should contain five fields which are separated by tabs:
+		ENGLISH	JAPANESE	ACRONYM	INFORMATION	CATEGORY
+		
+	For example in "9.htm", a typical line the tabulated file will look like:
+		Economic and Social Council	経済社会理事会	ECOSOC	国連の主要機関	国際組織
+	
+	If you run into records which have do not have ACRONYM
+	or INFORMATION data, you can just leave the fields blank.
+	
+	For example:
+		Doctors Without Borders	国境なき医師団			国際組織
+
+
+Instructions:
+	1. Please analyze the 9 htm files, and try to discovery patterns
+	   related to the data we want to retrieve.
+	2. Develop a parsing program which processes the 9 htm files
+	   and generate "result.tab".  Do not use any HTML parsing library.
+	3. Write down how you approached the parsing task in "report.txt".
+
+
+Hints:
+	1. If it's available, the data of INFORMATION field of a record
+	   always starts with "■".
+	2. All records of one htm file should have the same CATEGORY
+	   field value. For example, all records from "9.htm" should
+	   all have "国際組織" for their CATEGORY field
